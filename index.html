@@ -50,53 +50,49 @@
             margin-bottom: 3rem;
         }
 
-        .section {
+        .nav-cards {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-card {
+            display: block;
+            text-decoration: none;
             background: #161b22;
             border: 1px solid #30363d;
             border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: left;
+            padding: 1.5rem 2rem;
+            min-width: 200px;
+            flex: 1;
+            transition: border-color 0.2s, transform 0.15s;
         }
 
-        .section h2 {
-            font-size: 1.1rem;
-            color: #58a6ff;
+        .nav-card:hover {
+            border-color: #58a6ff;
+            transform: translateY(-2px);
+        }
+
+        .nav-card .card-icon {
+            font-size: 2rem;
             margin-bottom: 0.75rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
-        .section p {
-            color: #8b949e;
-            font-size: 0.95rem;
-            line-height: 1.6;
+        .nav-card h2 {
+            font-size: 1.1rem;
+            color: #f0f6fc;
+            margin-bottom: 0.5rem;
         }
 
-        .note-list { list-style: none; margin-top: 0.5rem; }
-        .note-item { padding: 0.75rem 1rem; background: #0d1117; border: 1px solid #21262d; border-radius: 6px; margin-bottom: 0.5rem; transition: border-color 0.2s; }
-        .note-item:hover { border-color: #58a6ff; }
-        .note-item a { color: #c9d1d9; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
-        .note-item a:hover { color: #58a6ff; }
-        .note-tag { font-size: 0.75rem; padding: 2px 6px; border-radius: 4px; background: #1f6feb22; color: #58a6ff; }
-
-        .code-placeholder {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.75rem 1rem;
-            background: #0d1117;
-            border: 1px dashed #30363d;
-            border-radius: 6px;
-            margin-top: 0.75rem;
-            color: #484f58;
-            font-family: "SF Mono", "Fira Code", monospace;
+        .nav-card p {
             font-size: 0.9rem;
+            color: #8b949e;
+            line-height: 1.5;
         }
 
         footer {
-            margin-top: 2rem;
+            margin-top: 3rem;
             font-size: 0.85rem;
             color: #484f58;
         }
@@ -108,26 +104,17 @@
         <h1 class="tagline">网站用于学习内容经验分享</h1>
         <p class="subtitle">记录学习过程，分享技术经验</p>
 
-        <div class="section">
-            <h2>💻 代码项目</h2>
-            <p>这里将展示我的代码作品和项目，敬请期待。</p>
-            <div class="code-placeholder">
-                <span>⚙️</span>
-                <span>项目筹备中…</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>📒 学习笔记</h2>
-            <p>记录学习过程中的技术总结与心得。</p>
-            <ul class="note-list">
-                <li class="note-item">
-                    <a href="StudyNotes/Self-attention.pdf">📄 Self-attention <span class="note-tag">笔记</span></a>
-                </li>
-                <li class="note-item">
-                    <a href="StudyNotes/TransformerLearning.html">📓 Transformer Learning <span class="note-tag">笔记</span></a>
-                </li>
-            </ul>
+        <div class="nav-cards">
+            <a class="nav-card" href="projects.html">
+                <div class="card-icon">💻</div>
+                <h2>代码项目</h2>
+                <p>作品展示与开源项目</p>
+            </a>
+            <a class="nav-card" href="notes.html">
+                <div class="card-icon">📒</div>
+                <h2>学习笔记</h2>
+                <p>技术总结与学习心得</p>
+            </a>
         </div>
 
         <footer>© 2026 lyzer · Powered by GitHub Pages</footer>

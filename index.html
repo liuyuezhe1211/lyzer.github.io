@@ -70,7 +70,22 @@
             <a href="notes.html">学习笔记</a>
         </nav>
 
-        <footer>© 2026 lyzer · Powered by GitHub Pages</footer>
+        <footer>
+            © 2026 lyzer · Powered by GitHub Pages
+            <div class="update-date">页面更改日期：<span id="update-date">2026-08-31</span></div>
+        </footer>
     </div>
+
+    <script>
+        // 自动显示页面文件最后修改日期
+        var el = document.getElementById('update-date');
+        var lm = new Date(document.lastModified);
+        if (el && !isNaN(lm.getTime())) {
+            var y = lm.getFullYear();
+            var m = ('0' + (lm.getMonth() + 1)).slice(-2);
+            var d = ('0' + lm.getDate()).slice(-2);
+            el.textContent = y + '-' + m + '-' + d;
+        }
+    </script>
 </body>
 </html>

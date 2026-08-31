@@ -9,8 +9,8 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
+            background: #ffffff;
+            color: #24292f;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -25,97 +25,50 @@
             text-align: center;
         }
 
-        .avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #58a6ff, #3fb950);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            margin: 0 auto 1.5rem;
-        }
-
         .tagline {
             font-size: 1.8rem;
             font-weight: 600;
-            color: #f0f6fc;
             margin-bottom: 0.75rem;
         }
 
         .subtitle {
             font-size: 1.1rem;
-            color: #8b949e;
+            color: #6e7781;
             margin-bottom: 3rem;
         }
 
-        .nav-cards {
+        .nav-links {
             display: flex;
-            gap: 1rem;
+            gap: 2.5rem;
             justify-content: center;
-            flex-wrap: wrap;
         }
 
-        .nav-card {
-            display: block;
+        .nav-links a {
+            color: #0969da;
             text-decoration: none;
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 1.5rem 2rem;
-            min-width: 200px;
-            flex: 1;
-            transition: border-color 0.2s, transform 0.15s;
+            font-size: 1.15rem;
         }
 
-        .nav-card:hover {
-            border-color: #58a6ff;
-            transform: translateY(-2px);
-        }
-
-        .nav-card .card-icon {
-            font-size: 2rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .nav-card h2 {
-            font-size: 1.1rem;
-            color: #f0f6fc;
-            margin-bottom: 0.5rem;
-        }
-
-        .nav-card p {
-            font-size: 0.9rem;
-            color: #8b949e;
-            line-height: 1.5;
+        .nav-links a:hover {
+            text-decoration: underline;
         }
 
         footer {
             margin-top: 3rem;
             font-size: 0.85rem;
-            color: #484f58;
+            color: #6e7781;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="avatar">🚀</div>
         <h1 class="tagline">网站用于学习内容经验分享</h1>
         <p class="subtitle">记录学习过程，分享技术经验</p>
 
-        <div class="nav-cards">
-            <a class="nav-card" href="projects.html">
-                <div class="card-icon">💻</div>
-                <h2>代码项目</h2>
-                <p>作品展示与开源项目</p>
-            </a>
-            <a class="nav-card" href="notes.html">
-                <div class="card-icon">📒</div>
-                <h2>学习笔记</h2>
-                <p>技术总结与学习心得</p>
-            </a>
-        </div>
+        <nav class="nav-links">
+            <a href="projects.html">代码项目</a>
+            <a href="notes.html">学习笔记</a>
+        </nav>
 
         <footer>© 2026 lyzer · Powered by GitHub Pages</footer>
     </div>

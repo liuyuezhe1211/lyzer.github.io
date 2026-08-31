@@ -8,46 +8,41 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #0d1117; color: #c9d1d9; min-height: 100vh;
+            background: #ffffff; color: #24292f; min-height: 100vh;
             display: flex; flex-direction: column; align-items: center;
         }
         .container { max-width: 720px; width: 100%; padding: 2rem; }
         .back-link {
-            display: inline-flex; align-items: center; gap: 0.4rem;
-            color: #8b949e; text-decoration: none; font-size: 0.9rem; margin-bottom: 1.5rem;
+            display: inline-block;
+            color: #0969da; text-decoration: none; font-size: 0.9rem; margin-bottom: 1.5rem;
         }
-        .back-link:hover { color: #58a6ff; }
-        .page-title { font-size: 1.8rem; font-weight: 600; color: #f0f6fc; margin-bottom: 0.5rem; }
-        .subtitle { font-size: 1rem; color: #8b949e; margin-bottom: 2rem; }
+        .back-link:hover { text-decoration: underline; }
+        .page-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1rem; color: #6e7781; margin-bottom: 2rem; }
 
         .project-list { list-style: none; }
         .project-item {
-            display: flex; align-items: center; gap: 1rem;
-            padding: 1rem 1.25rem; background: #161b22; border: 1px solid #30363d;
+            padding: 0.9rem 1rem; background: #f6f8fa; border: 1px solid #d0d7de;
             border-radius: 8px; margin-bottom: 0.75rem; transition: border-color 0.2s;
         }
-        .project-item:hover { border-color: #3fb950; }
-        .project-icon { font-size: 1.5rem; flex-shrink: 0; }
-        .project-info { flex: 1; min-width: 0; }
-        .project-info .project-name { color: #c9d1d9; font-weight: 500; font-size: 1rem; }
-        .project-meta { display: flex; gap: 1rem; margin-top: 0.3rem; font-size: 0.8rem; color: #8b949e; }
-        .project-tag { font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; background: #3fb95022; color: #3fb950; }
+        .project-item:hover { border-color: #0969da; }
+        .project-info .project-name { color: #24292f; font-weight: 500; font-size: 1rem; }
+        .project-meta { margin-top: 0.3rem; font-size: 0.8rem; color: #6e7781; }
+        .project-tag { font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; background: #dafbe1; color: #1a7f37; }
         .empty-state {
-            text-align: center; padding: 3rem 1rem; color: #484f58;
+            text-align: center; padding: 3rem 1rem; color: #6e7781;
         }
-        .empty-state .icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
         .empty-state p { font-size: 0.95rem; }
-        footer { margin-top: 3rem; font-size: 0.85rem; color: #484f58; text-align: center; }
+        footer { margin-top: 3rem; font-size: 0.85rem; color: #6e7781; text-align: center; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a class="back-link" href="index.html">← 返回首页</a>
-        <h1 class="page-title">💻 代码项目</h1>
+        <a class="back-link" href="index.html">返回首页</a>
+        <h1 class="page-title">代码项目</h1>
         <p class="subtitle">这里展示我的代码作品与开源项目</p>
 
         <div class="empty-state">
-            <div class="icon">⚙️</div>
             <p>项目筹备中，敬请期待…</p>
         </div>
 
